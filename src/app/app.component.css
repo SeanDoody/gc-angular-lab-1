@@ -1,0 +1,31 @@
+form {
+    width: 75vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 3vw;
+    padding: 2vw;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 1vw;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+input {
+    border-color: #eee;
+    color: #bbb;
+    border-width: 0.1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+button {
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 0.5vw;
+    height: 2vw;
+}

@@ -1,0 +1,22 @@
+.to-do-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    /* list-style-position: inside; */
+}
+
+.complete-btn {
+    color: #ff69b4;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.1vw;
+    border-color: #ff69b4;
+    background-color: #fff;
+}
+
+.delete-btn {
+    border: none;
+    background-color: #fff;
+}

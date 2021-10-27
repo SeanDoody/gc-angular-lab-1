@@ -1,0 +1,11 @@
+<ol>
+    <li *ngFor="let toDo of toDos">
+        <div class="to-do-item">
+            <div>
+                <button *ngIf="!toDo.completed" class="complete-btn">Complete</button>
+                <span [ngStyle]="{'text-decoration': toDo.completed ? 'line-through' : 'none'}">{{ toDo.task }}</span>
+            </div>
+            <button class="delete-btn">X</button>
+        </div>
+    </li>
+</ol>
