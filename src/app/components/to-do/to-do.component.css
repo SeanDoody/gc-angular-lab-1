@@ -1,22 +1,64 @@
+form {
+    min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 0.1rem 0rem rgba(0,0,0,0.75);
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+input {
+    border-color: #eee;
+    color: #bbb;
+    border-width: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+#add-btn {
+    background-color: #ff1493;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+
 .to-do-item {
     display: flex;
     justify-content: space-between;
 }
 
-li {
-    /* list-style-position: inside; */
+ol {
+    margin-left: 1rem;
 }
 
 .complete-btn {
     color: #ff69b4;
     border-style: solid;
-    border-width: 0.1vw;
-    border-radius: 0.1vw;
+    border-width: 0.1rem;
+    border-radius: 0.1rem;
     border-color: #ff69b4;
     background-color: #fff;
+    margin-right: 0.3rem;
 }
 
 .delete-btn {
     border: none;
     background-color: #fff;
+    color: #000;
+    margin-left: 0.5rem;
+}
+
+input {
+    padding-left: 0.2rem;
 }
