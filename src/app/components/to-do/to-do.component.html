@@ -1,21 +1,50 @@
 <form (submit)="addTask()">
     <h1>To-Do List</h1>
     <p>A place to store your to-dos!</p>
-    <input [(ngModel)]="filterInput" (input)="filterToDos()" type="text" name="filter-input" placeholder="Filter your to-dos">
+    <input
+        [(ngModel)]="filterInput"
+        (input)="filterToDos()"
+        type="text"
+        name="filter-input"
+        placeholder="Filter your to-dos"
+    />
     <ol>
         <li *ngFor="let toDo of filteredToDos">
             <div class="to-do-item">
                 <div>
-                    <button *ngIf="!toDo.completed" (click)="completeTask(toDo.task)" type="button"
-                        class="complete-btn">Complete</button>
-                    <span [ngStyle]="{'text-decoration': toDo.completed ? 'line-through' : 'none'}">{{ toDo.task
-                        }}</span>
+                    <button
+                        *ngIf="!toDo.completed"
+                        (click)="completeTask(toDo.task)"
+                        type="button"
+                        class="complete-btn"
+                    >
+                        Complete
+                    </button>
+                    <span
+                        [ngStyle]="{
+                            'text-decoration': toDo.completed
+                                ? 'line-through'
+                                : 'none'
+                        }"
+                        >{{ toDo.task }}</span
+                    >
                 </div>
-                <button (click)="removeTask(toDo.task)" type="button" class="delete-btn">X</button>
+                <button
+                    (click)="removeTask(toDo.task)"
+                    type="button"
+                    class="delete-btn"
+                >
+                    X
+                </button>
             </div>
         </li>
     </ol>
     <span *ngIf="toDos.length === 0">Nothing to do!</span>
-    <input [(ngModel)]="toDoInput" type="text" name="to-do-input" placeholder="Add your to-do">
+    <input
+        [(ngModel)]="toDoInput"
+        type="text"
+        name="to-do-input"
+        placeholder="Add your to-do"
+    />
     <button type="submit" id="add-btn">Add</button>
 </form>
